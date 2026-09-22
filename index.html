@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>🚚 마포구퀵서비스 차량별 맞춤 배송</h3>
+          <p>아현동 공덕동 신공덕동 도화동 용강동 토정동 마포동 대흥동 염리동 노고산동 신수동 현석동 구수동 창전동 상수동 하중동 당인동 서교동 동교동 합정동 망원동 연남동 성산동 중동 상암동 서강동 마포 마포대로 가양대로 강변북로 월드컵로 국회대로 마포구 전지역</p>
             <ul>
                 <li>🏍️ 마포구오토바이퀵 : 소형 긴급 화물 및 중요 서류 신속한 배송 지원</li>
                 <li>🚙 마포구다마스퀵 : 소규모 이삿짐 및 가전/가구 안전한 퀵서비스</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+    <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
